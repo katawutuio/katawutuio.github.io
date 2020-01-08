@@ -4,20 +4,6 @@ html, body {
     padding: 0;
 }
 
-body {
-    background: gray url(https://subtlepatterns.com/patterns/blue-snow.png) repeat
-      0 0;
-    -webkit-animation: slide 20s linear infinite;
-}
-@-webkit-keyframes slide {
-    from {
-      background-position: 0 0;
-    }
-    to {
-      background-position: 0 400px;
-    }
-  }
-
 .container {
     width: 100%;
 }
@@ -48,31 +34,4 @@ nav a {
 main {
     width: 1366px;
     margin: 0 auto;
-    height: 768px;
-    background-color: snow;
-}
-
-h1 {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-h1 span {
-    display: inline-block;
-}
-
-span {
-    transition: transform 2s ease;
-}
-
-span:active {
-    transform: rotate(45deg);
-    transform-origin: top left;
-}
-
-@media screen and (max-width: 450px) {
-    main {
-        width: 100%;
-    }
 }
