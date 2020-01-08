@@ -18,7 +18,12 @@ body {
     }
   }
 
+.container {
+    width: 100%;
+}
+
 header {
+    width: 100%;
     background-color: grey;
     height: 40px;
     display: flex;
@@ -64,4 +69,10 @@ span {
 span:active {
     transform: rotate(45deg);
     transform-origin: top left;
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        width: 100%;
+    }
 }
