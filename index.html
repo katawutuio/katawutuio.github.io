@@ -17,8 +17,35 @@
             </nav>
         </header>
         <main>
-            
+            <h2>Web resources</h2>
+            <div class="web-resource-list"></div>
         </main>
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDVN-p4Cl9NIGFaNvCUdXcAO6ePYe9UC3s",
+        authDomain: "katawutuio-4858e.firebaseapp.com",
+        databaseURL: "https://katawutuio-4858e.firebaseio.com",
+        projectId: "katawutuio-4858e",
+        storageBucket: "katawutuio-4858e.appspot.com",
+        messagingSenderId: "983281142613",
+        appId: "1:983281142613:web:9580cf3b5698878b677ddc",
+        measurementId: "G-V34KQHC1E6"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+    </script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
